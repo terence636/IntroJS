@@ -30,7 +30,7 @@
   </style>
 </head>
 <body>
-  
+  <!-- <h1 class"test">Test</h1> -->
   <h1>Hello <span id="name">name</span></h1>
   <button class="btn">Change the name!</button>
   
@@ -38,10 +38,12 @@
   <script>
     const btn = document.querySelector(".btn")
     const name = document.getElementById("name")
+    // const test = document.querySelector(".test")
 
     btn.addEventListener('click', ()=>{
       const myName = window.prompt();
       name.innerText = myName;
+      // test.textContent = myName;
     })
   </script>
 </body>
